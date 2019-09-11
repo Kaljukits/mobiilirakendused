@@ -38,6 +38,50 @@ namespace NewHelloWorld
 			_editText = FindViewById<EditText>(Resource.Id.editText1);
 			_editText = FindViewById<EditText>(Resource.Id.editText2);
 			_textView = FindViewById<TextView>(Resource.Id.textView1);
-		}
+
+            _button.Click += delegate
+            {
+                float num1, num2;
+                num1 = float.Parse(_editText.Text);
+                num2 = float.Parse(_editText2.Text);
+
+                float sum = num1 + num2;
+
+                _textView.Text = Convert.ToString(sum);
+            };
+
+            _button2.Click += delegate
+            {
+                float num1, num2;
+                num1 = float.Parse(_editText.Text);
+                num2 = float.Parse(_editText2.Text);
+
+                float sum = num1 - num2;
+
+                _textView.Text = Convert.ToString(sum);
+            };
+
+            _button3.Click += delegate
+            {
+                float num1, num2;
+                num1 = float.Parse(_editText.Text);
+                num2 = float.Parse(_editText2.Text);
+
+                float sum = num1 * num2;
+
+                _textView.Text = Convert.ToString(sum);
+            };
+
+            _button4.Click += delegate
+            {
+                float num1, num2;
+                num1 = float.Parse(_editText.Text);
+                num2 = float.Parse(_editText2.Text);
+
+                float sum = num1 / num2;
+
+                _textView.Text = Convert.ToString(sum);
+            };
+        }
 	}
 }
