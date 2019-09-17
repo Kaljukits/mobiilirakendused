@@ -1,22 +1,10 @@
 <resources>
-
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-
-      <item name="Red">@color/Red</item>
-      <item name="Orange">@color/Orange</item>
-      <item name="Yellow">@color/Yellow</item>
-      <item name="Green">@color/Green</item>
-      <item name="Blue">@color/Blue</item>
-      <item name="Indigo">@color/Indigo</item>
-      <item name="Violet">@color/Violet</item>
-
-      <item name="Black">@color/Black</item>
-      <item name="White">@color/White</item>
     </style>
 
 </resources>
