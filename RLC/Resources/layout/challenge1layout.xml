@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Black"
+    android:gravity="center">
+    
+    <TextView
+        android:text="Red"
+        android:textColor="@color/Black"
+        android:background="@color/Red"
+        android:padding="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/textView1" />
+    <TextView
+        android:text="Orange"
+        android:textColor="@color/Black"
+        android:background="@color/Orange"
+        android:padding="8dp"
+        android:layout_below="@id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2" />
+    <TextView
+        android:text="Yellow"
+        android:textColor="@color/Black"
+        android:background="@color/Yellow"
+        android:padding="8dp"
+        android:layout_below="@id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3" />
+    <TextView
+        android:text="Green"
+        android:textColor="@color/Black"
+        android:background="@color/Green"
+        android:padding="8dp"
+        android:layout_below="@id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4" />
+    <TextView
+        android:text="Blue"
+        android:textColor="@color/White"
+        android:background="@color/Blue"
+        android:padding="8dp"
+        android:layout_below="@id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5" />
+    <TextView
+        android:text="Indigo"
+        android:textColor="@color/White"
+        android:background="@color/Indigo"
+        android:padding="8dp"
+        android:layout_below="@id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6" />
+    <TextView
+        android:text="Violet"
+        android:textColor="@color/Black"
+        android:background="@color/Violet"
+        android:padding="8dp"
+        android:layout_below="@id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView7" />
+</RelativeLayout>
