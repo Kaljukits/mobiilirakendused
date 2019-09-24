@@ -13,6 +13,7 @@ namespace XamarinEE
         TextView _batteryLevelView;
         TextView _state;
         TextView _source;
+        TextView _info;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -70,6 +71,18 @@ namespace XamarinEE
             }
 
             Battery.BatteryInfoChanged += Battery_BatteryInfoChanged;
+
+            var deviceModel = DeviceInfo.Model;
+            var manufactorer = DeviceInfo.Manufacturer;
+            var deviceName = DeviceInfo.Name;
+            var version = DeviceInfo.VersionString;
+            var platform = DeviceInfo.Platform;
+            var idiom = DeviceInfo.Idiom;
+            var devicetype = DeviceInfo.DeviceType;
+
+            System.Diagnostics.Debug.WriteLine("DeviceInfo: {0} , {1} , {2} , {3} , {4} , {5} , {6}",
+                deviceModel, manufactorer, deviceName, version, platform, idiom, devicetype);
+
         }
 
         private void Battery_BatteryInfoChanged(object sender, BatteryInfoChangedEventArgs e)
