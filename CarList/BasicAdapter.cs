@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace CarList
 {
-    class BasicAdapter : BaseAdapter
+    class BasicAdapter : BaseAdapter<Car>
     {
         List<Car> _items;
         Activity _context;
