@@ -22,8 +22,9 @@
             android:layout_height="wrap_content"
             android:minWidth="25px"
             android:minHeight="25px"
+            android:width="350px"
             android:layout_weight="1"
-            android:gravity="Center" />
+            android:gravity="center" />
         <TextView
             android:text="Model"
             android:textAppearance="?android:attr/textAppearanceLarge"
@@ -31,8 +32,9 @@
             android:layout_height="wrap_content"
             android:minWidth="25px"
             android:minHeight="25px"
+            android:width="250px"
             android:layout_weight="1"
-            android:gravity="Center" />
+            android:gravity="center" />
         <TextView
             android:text="Year"
             android:textAppearance="?android:attr/textAppearanceLarge"
@@ -40,8 +42,9 @@
             android:layout_height="wrap_content"
             android:minWidth="25px"
             android:minHeight="25px"
+            android:width="250px"
             android:layout_weight="1"
-            android:gravity="Center" />
+            android:gravity="center" />
         <TextView
             android:text="KW"
             android:textAppearance="?android:attr/textAppearanceLarge"
@@ -49,8 +52,9 @@
             android:layout_height="wrap_content"
             android:minWidth="25px"
             android:minHeight="25px"
+            android:width="250px"
             android:layout_weight="1"
-            android:gravity="Center" />
+            android:gravity="center" />
     </LinearLayout>
     <ListView
         android:minWidth="25px"
