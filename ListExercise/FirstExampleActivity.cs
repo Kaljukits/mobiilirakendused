@@ -20,6 +20,8 @@ namespace ListExercise
             base.OnCreate(savedInstanceState);
 
             List<WeatherInfo> _items;
+            var queryString = "https://www.metaweather.com/api/location/4418";
+            //var data = Core.DataService.GetDataFromService(queryString);
 
             _items = new List<WeatherInfo>()
             {
