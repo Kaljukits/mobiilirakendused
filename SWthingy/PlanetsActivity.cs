@@ -23,14 +23,13 @@ namespace SWthingy
 
             var searchBar = FindViewById<EditText>(Resource.Id.searchTxtPlanets);
             var searchButton = FindViewById<Button>(Resource.Id.searchBtnPlanets);
-            var peopleListView = FindViewById<ListView>(Resource.Id.planetsListView);
+            var planetsListView = FindViewById<ListView>(Resource.Id.planetsListView);
 
             searchButton.Click += async delegate
             {
-                string searchWord = searchBar.Text;
-                string queryString = "https://swapi.co/api/planets/?search=" + searchWord;
+                string queryString = "https://swapi.co/api/planets/?search=" + searchBar.Text;
                 var data = await DataServicePlanets.GetStarWarsPlanets(queryString);
-                peopleListView.Adapter = new StarWarsPlanetsAdapter(this, data.Results);
+                planetsListView.Adapter = new StarWarsPlanetsAdapter(this, data.Results);
             };
 
         }

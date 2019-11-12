@@ -28,8 +28,7 @@ namespace SWthingy
 
             searchBtn.Click += async delegate
             {
-                string searchWord = searchBar.Text;
-                string queryString = "https://swapi.co/api/people/?search=" + searchWord;
+                string queryString = "https://swapi.co/api/people/?search=" + searchBar.Text;
                 var data = await DataServicePeople.GetStarWarsPeople(queryString);
                 peopleListView.Adapter = new StarWarsPeopleAdapter(this, data.Results);
             };
